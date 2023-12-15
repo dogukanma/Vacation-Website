@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 241);
+}
+
+.announcement{
+  background-color: rgb(225, 225, 225);
+  text-align: center;
+  width: 100%;
+  padding: 2px 0;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  border-bottom: 2px solid rgb(139, 139, 139);
+}
+
+.announcement > span{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0px;
+  border-bottom: 2px solid rgb(139, 139, 139);
+}
+
+nav a{
+  transition: 100ms;
+}
+
+nav a:hover{
+  color: rgb(100, 100, 100);
+}
+
+nav .profile{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(225, 225, 225);;
+  padding: 5px 15px;
+  border-radius: 10rem;
+  background-color: rgb(245, 245, 245);
+}
+
+nav .profile > p{
+  font-size: 14px;
+}
+
+nav .profile > .profile-photo{
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.search-bar{
+  width: 25rem;
+  border: 2px solid rgb(139, 139, 139);
+  border-radius: 10rem;
+  height: 70px;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  /* padding: 0 15px; */
+}
+
+.search-bar > .slash{
+  height: 50px;
+  width: 4px;
+  background-color: black;
+  border-radius: 10rem;
+  rotate: 20deg;
+}
+
+.city, .date, .guest-number{
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 10rem;
+  transition: 100ms;
+  flex-basis: 20%;
+}
+
+.guest-number{
+  flex-basis: 40%;
+}
+
+.search-icon{
+  flex-basis: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.city:hover, .date:hover, .guest-number:hover{
+background-color: rgb(225, 225, 225);
+}
+
+.search-bar > .search-icon{
+  height: 50%;
+  width: 10%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(225, 225, 225);
+  cursor: pointer;
+}
+
+.search-bar + a{
+  color: black;
+}
+
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main{
+  margin-top: 1.2rem;
+}
+
+main .div-filter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+  border: 2px solid rgb(139, 139, 139);
+  border-radius: 10rem;
+  min-width: 12rem;
+  width: 13rem;
+  min-height: 2rem;
+  height: 2.5rem;
+  margin: auto;
+  cursor: pointer;
+  background-color: rgb(245, 245, 245);
+  transition: 100ms;
+}
+
+main .div-filter:hover{
+  background-color: rgb(225, 225, 225);
+}
+
+main .div-filter > .fa-sliders{
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+main > .section-listing {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.section-listing > .div-listing{
+  border: 2px solid rgb(0, 0, 0);
+  width: 16rem;
+  height: 21rem;
+  margin-top: 20px;
+}
+
+.div-listing > *{
+  margin: 5px;
+}
+
+.div-listing > .listing-img{
+  width: 100%;
+  height: 14rem;
+  background-image: url("https://picsum.photos/100");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0;
+}
+
+.div-listing .fa-heart{
+  font-size: 1.5rem;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  opacity: 0.5;
+}
+
+.div-listing > .location{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-listing .rating{
+  display: flex;
+  align-items: center;
+}
+
+.div-listing .rating > .fa-star{
+  font-size: 0.8rem;
+}
+
+.div-listing .rating > span{
+  margin-left: 5px;
+}
+
+.div-listing .distance{
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgb(50, 50, 50);
+}
+
+.div-listing .available-date{
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgb(50, 50, 50);
+}
+
+.div-listing .price{
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.div-listing .price > .category{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.div-listing .price > .category > .fa-tent{
+  margin-left: 5px;
+}
