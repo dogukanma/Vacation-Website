@@ -190,6 +190,7 @@ main > .section-listing {
   width: 16rem;
   height: 21rem;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .div-listing > * {
@@ -207,6 +208,7 @@ main > .section-listing {
 }
 
 .div-listing .fa-heart {
+  color: black;
   font-size: 1.5rem;
   position: absolute;
   right: 5px;
@@ -492,7 +494,7 @@ footer .footer-links {
   justify-content: space-between;
 }
 
-.profile-div-listing{
+.profile-div-listing {
   border: 2px solid rgb(0, 0, 0);
   min-width: 16rem;
   min-height: 21rem;
@@ -513,6 +515,7 @@ footer .footer-links {
 }
 
 #profile-fa-heart {
+  color: black;
   font-size: 1.5rem;
   position: absolute;
   right: 5px;
@@ -521,63 +524,63 @@ footer .footer-links {
   cursor: pointer;
 }
 
-.profile-location{
+.profile-location {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.profile-rating{
+.profile-rating {
   display: flex;
   align-items: center;
 }
 
-#profile-fa-star{
+#profile-fa-star {
   font-size: 0.8rem;
 }
 
-.profile-rating > span{
+.profile-rating > span {
   margin-left: 5px;
 }
 
-.profile-distance{
+.profile-distance {
   font-size: 0.7rem;
   font-weight: 600;
   color: rgb(50, 50, 50);
 }
 
-.profile-available-date{
+.profile-available-date {
   font-size: 0.7rem;
   font-weight: 600;
   color: rgb(50, 50, 50);
 }
 
-.profile-price{
+.profile-price {
   font-size: 0.7rem;
   display: flex;
   align-items: center;
 }
 
-.profile-category{
+.profile-category {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: auto;
 }
 
-#profile-fa-tent{
+#profile-fa-tent {
   margin-left: 5px;
 }
 
-.profile-evaluation{
+.profile-evaluation {
   width: 20rem;
 }
 
-.profile-evaluation > h3{
+.profile-evaluation > h3 {
   text-align: center;
 }
 
-.evaluation-text > p{
+.evaluation-text > p {
   padding: 1rem;
   margin-top: 5px;
   background-color: rgb(245, 245, 245);
@@ -587,7 +590,7 @@ footer .footer-links {
   min-height: 16rem;
 }
 
-.my-rating{
+.my-rating {
   margin-top: 0.5rem;
   display: flex;
   justify-content: space-between;
@@ -599,12 +602,12 @@ footer .footer-links {
   font-weight: 500;
 }
 
-.my-rating > span{
+.my-rating > span {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.my-rating > span > .fa-star{
+.my-rating > span > .fa-star {
   margin-left: 4px;
 }
