@@ -611,3 +611,123 @@ footer .footer-links {
 .my-rating > span > .fa-star {
   margin-left: 4px;
 }
+
+.selected-main{
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgb(180, 180, 180);
+}
+
+.selected-main > h1{
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+.img-info-container{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+}
+
+.div-selected-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-selected-image > img{
+  min-width: 50rem;
+  max-width: 50rem;
+  border: 2px solid rgb(50, 50, 50);
+  object-position: center;
+  object-fit: cover;
+}
+
+.selected-small-images{
+  max-width: 50vw;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.selected-small-images > img{
+  max-width: 12rem;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgb(50, 50, 50);
+  display: block;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.selected-small-images > img:hover{
+  border: none;
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.selected-information{
+  margin-top: 2rem;
+  width: fit-content;
+}
+
+.light-information{
+  font-weight: 600;
+  color: rgb(50, 50, 50);
+  font-size: 14px;
+  display: flex;
+  gap: 2rem;
+  margin: 0.5rem 1rem;
+}
+
+.selected-about{
+  margin: 2rem 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.selected-details{
+  background-color: rgb(245, 245, 245);
+  border-radius: 1rem;
+  width: 30vw;
+  box-shadow: 0px 2px 16px rgb(139, 139, 139);
+  padding: 1.5rem;
+}
+
+.selected-details > h3{
+  margin-bottom: 1rem;
+}
+
+.selected-details > h3:nth-of-type(2),
+.selected-details > h3:nth-of-type(3){
+  margin-top: 2rem;
+}
+
+.selected-details ul{
+  margin-left: 1rem;
+}
+
+.selected-profile-card{
+  background-color: rgb(245, 245, 245);
+  border-radius: 1rem;
+  width: 30vw;
+  box-shadow: 0px 2px 16px rgb(139, 139, 139);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selected-profile-card > img{
+  width: 200px;
+  border-radius: 50%;
+}
+
+.selected-profile-card > h3{
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.selected-profile-card li{
+  margin-bottom: 0.3rem;
+}
