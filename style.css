@@ -731,3 +731,49 @@ footer .footer-links {
 .selected-profile-card li{
   margin-bottom: 0.3rem;
 }
+
+.selected-comment-section{
+  width: 700px;
+  margin: auto;
+}
+
+.selected-comment-stars{
+
+}
+
+.selected-comment{
+  background-color: rgb(245, 245, 245);
+  border: 2px solid rgb(139, 139, 139);
+  border-radius: 1rem;
+  display: flex;
+  padding: 10px;
+  margin-top: 1rem;
+}
+
+.selected-comment > img{
+  width: 120px;
+  height: fit-content;
+  border-radius: 50%;
+  border: 1px solid rgb(139, 139, 139);
+  display: inline-block;
+}
+
+.selected-comment-text{
+  margin-left: 2rem;
+}
+
+.selected-comment-info{
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+}
+
+.selected-comment-idea{
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+
+.yellow{
+  color: rgb(237, 237, 0);
+}
