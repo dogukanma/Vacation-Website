@@ -81,15 +81,16 @@
         margin: 0;
       }
 
+      input[type="number"]{
+        border-radius: 0.2rem;
+        border: 1px solid rgb(183, 183, 183);
+      }
+
       input[type="text"],
       input[type="email"] {
         height: 40px;
       }
 
-      select {
-        /* height: 40px;
-        background-color: #f8f8f8; */
-      }
       .gonder {
         text-align: center;
         margin: 20px 0; /* Adjust the margin as needed */
@@ -134,6 +135,10 @@
       }
       #idk:hover {
         background-color: rgb(213, 138, 46);
+      }
+
+      .address-select{
+        padding: 0.5rem;
       }
     </style>
   </head>
@@ -204,21 +209,19 @@
         <input type="text" placeholder="Email" />
         <input type="text" placeholder="Phone number" />
 
-        <select name="state">
+        <select class="address-select" name="state">
           <option selected disabled value="">State</option>
           <option value="california">California</option>
           <option value="texas">Texas</option>
           <option value="massachusetts">Massachusetts</option>
         </select>
 
-        <select name="city">
+        <select name="address-select">
           <option selected disabled value="">City</option>
           <option value="istanbul">Houston</option>
           <option value="ankara">Los Angeles</option>
           <option value="ankara">Chicago</option>
         </select>
-
-        <address></address>
 
         <!-- <label for="zip_code">Zip Code</label> -->
         <input
@@ -230,12 +233,14 @@
           required
         />
 
-        <select name="property_type">
+        <select class="address-select" name="property_type">
           <option selected disabled value="">Property Type</option>
           <option value="villa">Villa</option>
           <option value="apartment">Apartment</option>
           <option value="cottage">Cottage</option>
         </select>
+
+        <textarea placeholder="Full Address" style="padding: 0.5rem; margin-bottom: 1rem;" name="open_address" id="" cols="57" rows="4"></textarea>
         <button id="idk">Apply Now</button>
       </form>
     </section>
